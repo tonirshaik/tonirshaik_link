@@ -28,6 +28,7 @@
 
 <!-- Favicon (uses profile photo) -->
 <link rel="icon" type="image/jpeg" href="Tonir-3.jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <!-- Structured data: tells Google this page is about a Person -->
 <script type="application/ld+json">
@@ -239,6 +240,37 @@
     .caret, .avatar-ring{ animation: none; }
   }
 
+  /* ---- Social icon row ---- */
+  .social-row{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    flex-wrap:nowrap;
+    gap: 7px;
+    margin-top: 26px;
+    overflow-x:auto;
+    padding-bottom: 2px;
+    scrollbar-width:none;
+  }
+  .social-row::-webkit-scrollbar{ display:none; }
+  .social-row a{
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: var(--surface);
+    border: 1px solid var(--surface-line);
+    color: var(--text-dim);
+    display:flex; align-items:center; justify-content:center;
+    font-size: 13px;
+    flex-shrink:0;
+    text-decoration:none;
+    transition: border-color .18s ease, color .18s ease, transform .18s ease;
+  }
+  .social-row a:hover{
+    border-color: var(--accent);
+    color: var(--accent-2);
+    transform: translateY(-2px);
+  }
+
   /* ---- Admin toggle + panel ---- */
   .admin-fab{
     position: fixed;
@@ -366,6 +398,21 @@
     <p class="bio">This is my personal website — find all my documents and links below 👇</p>
 
     <div class="links" id="linksContainer"></div>
+
+    <div class="social-row">
+      <a href="https://www.facebook.com/tonirshaik/" title="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/tonirshaik/" title="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/tonirshaik/" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/tonirshaik" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+      <a href="https://api.whatsapp.com/send?phone=8801887185251&text=" title="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="http://t.me/tonirshaik" title="Telegram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram"></i></a>
+      <a href="https://www.tiktok.com/@tonirshaik" title="TikTok" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://maps.app.goo.gl/xoBB5bubmN75boUv7" title="Google Maps" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-location-dot"></i></a>
+      <a href="https://profile.imo.im/profileshare/shr.AAAAAAAAAAAAAAAAAAAAAMtJ6xMJsaUoPavNx19yv99HoE-vnyCFNdplyDa5qYK7" title="imo" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-comment-dots"></i></a>
+      <a href="https://www.youtube.com/@tonirshaik" title="YouTube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.pinterest.com/tonirshaik/_profile/" title="Pinterest" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-pinterest-p"></i></a>
+      <a href="https://x.com/tonirshaik" title="X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
 
   </div>
 
