@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tonirshaik.github.io/tonirshaik_web/sitemap.xml
+Sitemap: https://tonirshaik.github.io/tonirshaik_link/sitemap.xml
